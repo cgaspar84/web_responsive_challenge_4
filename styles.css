@@ -1,0 +1,404 @@
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}    
+
+/*======================================== HEADER */
+
+.header-container {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    position: fixed;
+    top: 0;
+}
+
+.header-container header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container header .header-logo-container {
+    width: 100%;
+    height: 70px;    
+}
+
+.header-container header .header-logo-container #header-img {
+    height: 70px;
+    margin: 0 auto;
+    display: block;
+}
+
+.header-container header .menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    list-style: none;
+}
+.header-container header .navigation{
+    margin-top: 0.1em;
+    background-color: #333;
+    line-height: 1;
+    display: block;
+} 
+.header-container header .menu li {
+    display: block;
+    border-width: 0 1px 0 0;
+    border-color: rgba(255, 255, 255, .2);
+    border-style: solid;
+    color: rgba(255, 255, 255, .2);
+}
+.header-container header .menu a {
+    display: block;
+    text-decoration: none;
+    padding: 1.25em 1.5em;
+    color: white;
+}
+.header-container header .menu a:hover {
+    background-color: rgba(255, 255,255, 0.2);
+    color: rgba(255,255,255, 0.75);
+}
+
+/*======================================== MAIN */
+
+.legendary {
+    display: flex;
+    flex-direction: row;
+    padding-top: 125px;
+}
+
+.section-container > .legendary-mobile {
+    display: block;
+    margin: 0 auto;
+    height: 550px;
+    overflow: hidden;
+    background-image: url("img/gold-silver-standard.jpg");
+    width: 100%;
+    background-size: cover;    
+    background-position: 0 -10rem;   
+}
+
+.section-container > .legendary-mobile img {
+    display: block;
+    margin: 0 auto;
+}
+
+.legendary-cover-a {
+    width: 50%;
+    height: 100px;
+    background-color: gold;
+}
+
+.legendary-cover-b {
+    width: 50%;
+    height: 100px;
+    background-color: silver;
+}
+
+.section-container {
+    width: 100%;
+    background-color: transparent;
+}
+
+.section-article-container h2 {
+    font-size: 1.5rem;
+}
+.section-article-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.section-article-container {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 2px inset black;
+    border-radius: 10px;
+    padding: 5px;   
+    display: flex;
+    flex-direction: row; 
+}
+
+.section-article-container img {
+    display: block;
+    height: 200px;
+    width: 80%;
+    object-fit: contain;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.section-article-container section {
+    margin: 20px;
+    background: white;
+    padding: 15px;
+}
+
+.section-article-container {
+    background-color: white;
+}
+
+.section-container form {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 4px solid #ddd;
+    border-radius: 15px;
+}
+.section-container form p {
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 2px;
+
+}
+.section-container form input {
+    flex-grow: 2;
+    height: 30px;
+    font-size: 18px;
+}
+.section-container form #submit {
+    max-width: 300px;
+    margin: 10px;
+    height: 35px;
+} 
+
+.section-container form .form-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/*======================================== FOOTER */
+
+.footer-container:before {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-color:  goldenrod;
+    content: "";
+    right: 50%;
+    left: auto;
+    z-index: -1;
+} 
+
+.footer-container:after {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-color:  silver;
+    content: "";
+    right: auto;
+    left: 50%;
+    z-index: -1;
+} 
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+
+.footer-container footer {
+    width: 100%;
+}
+
+.footer-container .footer-sideGold {    
+    background: gold;
+}
+.footer-container .footer-sideSilver {
+    background: silver;
+}
+
+.footer-container .footer-logo-container {
+    display: flex;
+    flex-wrap: nowrap;
+    
+    margin: 0 auto;
+    padding-top: 10px;
+    
+}
+
+.footer-container .footer-logo-container img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer-container .footer-logo-container img {
+    height: 140px;
+    width: 50%;
+    
+}
+
+.footer-container footer {
+    text-align: center;
+}
+
+@media (max-width: 1300px) {
+    .section-container > .legendary-mobile {
+        display: block;
+        margin: 0 auto;
+        overflow: hidden;
+        background-image: url("img/gold-silver-standard.jpg");
+        width: 100%;
+        background-size: contain;
+        height: 290px;
+        background-size: 100%;
+        background-position: 0;
+    }
+
+    .section-article-container {
+        margin: 0 auto;/*5px;*/
+        border: 2px inset black;
+        border-radius: 10px;
+        padding: 10px;   
+        display: flex;   
+        width: 70%;  
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+}  
+
+/* MOBILE : 400px */
+@media (max-width:500px) {
+
+    .header-container header .menu {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        text-align: center;
+    }
+    .header-container header .menu li {
+        display: block;
+        border-width: 0 0.5px 0.5px 1px;
+        border-color: rgba(255, 255, 255, .2);
+        border-style: solid;
+        color: rgba(255, 255, 255, .2);
+    }
+
+    /*======================================== MAIN */
+
+    .legendary {
+        display: flex;
+        flex-direction: row;
+        padding-top: 180px;
+    }
+
+    .section-container > .legendary-mobile {
+        display: block;
+        margin: 0 auto;
+        overflow: hidden;
+        background-image: url("img/gold-silver-standard.jpg");
+        width: 100%;
+        background-size: contain;
+        height: 290px;
+        background-size: 105%;
+        background-position: 0;
+    }
+    
+    .section-container {
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .section-article-container {
+        margin: 5px;
+        border: 2px inset black;
+        border-radius: 10px;
+        padding: 5px;   
+        display: block;   
+        width: 95%;  
+    }
+
+    .section-article-container img {
+        display: block;
+        margin: 20px;
+        height: 200px;
+        width: 80%;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+
+    .section-article-container section {
+        margin: 20px;
+        background: white;
+        padding: 15px;
+    }
+    
+
+    /*======================================== FOOTER */
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-container .footer-sideGold {    
+        width: 50%;
+        height: 200px;
+        background: gold;
+    }
+    .footer-container .footer-sideSilver {
+        width: 50%;
+        height: 200px;
+        background: silver;
+    }
+
+    .footer-container:before {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        background-color:  goldenrod;
+        content: "";
+        right: 50%;
+        left: auto;
+        z-index: -1;
+    } 
+
+    .footer-container:after {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        background-color:  silver;
+        content: "";
+        right: auto;
+        left: 50%;
+        z-index: -1;
+    } 
+
+    .footer-container .footer-logo-container {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+    .footer-container .footer-logo-container img {
+        height: 140px;
+        width: 50%;
+        
+    }
+
+    .footer-container footer {
+        text-align: center;
+    }
+}
+
